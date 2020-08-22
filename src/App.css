@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+@import '~antd/dist/antd.css';
+.form_container{
+ text-align: center;
+max-width: 30vw;
+ margin-top:20vh ;
+ margin-left:10vw
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.close{
+  position: relative;
+  margin-top: 2% !important;
+  margin-left: 95% !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.addr-form{
+  display:block;
+  margin-top: 20vh;
+  margin-left: 35vw;
+  width: 30vw;
+  height: 40vh;
+  z-index:2 !important;
+  position: fixed !important;
+  background-color:#ECEAE9;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.alert-box{
+  display:block;
+top:5;
+right:0;
+  width: 30vw;
+  height: 10vh;
+  z-index:2 !important;
+  position: fixed !important;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.alert-box1{
+  display:none;
+top:5;
+right:0;
+  width: 30vw;
+  height: 10vh;
+  z-index:2 !important;
+  position: fixed !important;
 }

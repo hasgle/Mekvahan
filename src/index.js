@@ -2,11 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import PostLoginScreen from "./postLoginScreen"
 import * as serviceWorker from './serviceWorker';
+import {Router} from "@reach/router" ;
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+    <App  path="/"/>
+    <PostLoginScreen path="/home" />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
